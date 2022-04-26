@@ -492,7 +492,7 @@ a.button:focus {
 
 /* _header.scss */
 header {
-  background-color: #f8fbf3;
+  background-color: #e8f9d3;
   margin-bottom: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,11 +601,88 @@ footer .footerNav nav a:focus {
   background-color: #ffd698;
 }
 .categoryGallery .itemTwo {
-  background-color: #f4fcff;
+  background-color: #d3f0f9;
 }
 .categoryGallery .itemThree {
-  background-color: #f8fbf3;
+  background-color: #e8f9d3;
 }
 .categoryGallery .itemFour {
-  background-color: #fff5f5;
+  background-color: #f9d3d3;
+}
+
+@media (max-width: 500px) {
+  .navBar .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBar .wrapper .menuIcon {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .navBar .wrapper > * {
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  .navBar .logo {
+    margin: 0;
+  }
+  .navBar .searchCart button, .navBar .searchCart a, .navBar .searchCart div {
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .navBar .searchCart .searchIcon {
+    margin-right: 0;
+  }
+
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .headerImgContainer {
+    width: 100%;
+  }
+  header .headerContent {
+    width: 90%;
+    padding: 3rem 0;
+  }
+  header .headerContent .contentContainer {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .categoryGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .categoryGallery .items {
+    width: 100%;
+    margin: 50px 0 25px;
+  }
+
+  footer .footerFlexContainer {
+    margin-bottom: 60px;
+  }
+  footer .footerNav nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .footerNav nav ul {
+    margin-bottom: 24px;
+    width: 100%;
+  }
 }
