@@ -1,0 +1,57 @@
+// productsPage
+
+.productsMainContent {
+    
+    section {
+        padding: 75px 0;
+    }
+
+    h2 { 
+        text-align: center;
+    }
+
+    // flex parent
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            // flex basis controls the dimentions of the flex-CHILD
+            
+            // because we are using the default flex direction value (row) the main axis of alignment is the x-axis. Therefore flex basis will represent the width property. 
+            flex-basis: calc((100% /3) - 30px);
+            margin: 5px 15px;
+            text-align: center;
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    .popularProduct {
+        font-weight: bold;
+    }
+
+    // PLSFIXTHIS is there a more elegant solution to unapplying the CSS to the nested span
+    .discountedPrice {
+        text-decoration: line-through;
+        color: rgba($primary, $alpha: 0.5);
+        span {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba($primary, $alpha: 1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

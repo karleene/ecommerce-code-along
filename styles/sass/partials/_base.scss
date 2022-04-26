@@ -74,6 +74,7 @@ button {
 }
 
 a {
+    display: inline-block;
     &.button {
         color: $primary;
         background-color: transparent;
@@ -96,6 +97,15 @@ a {
         }
     }
 }
+
+// this ensures that image elements obey the dimensions of their parents
+img {
+    // note: this may need to be overwritten in further partial to be a width property (if image is not stretching to take up available space within parents container)
+    max-width: 100%;
+    display: block;
+}
+
+
 
 
 
